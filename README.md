@@ -14,38 +14,4 @@ This project consists of a React frontend and a FastAPI backend, performing CRUD
 
 - **main.py:** The FastAPI backend file defining routes for various task operations, such as creating, reading, updating, and deleting tasks. The tasks are stored in an in-memory database (`tasks_db`). The backend is configured to allow Cross-Origin Resource Sharing (CORS) from `http://localhost:3000` to enable communication with the React frontend.
 
-## How to Run
 
-To run this project locally, follow the steps below:
-
-### Prerequisites
-
-- Node.js and npm installed
-- Python 3 installed
-- setup env
-
-### Frontend
-
-1. Open a terminal and navigate to the `frontend` directory.
-2. Run the following commands:
-
-```bash
-npm install
-npm start
-```
-
-The React app will be accessible at `http://localhost:3000`.
-
-### Backend
-
-1. Open a new terminal window .
-2. Run the following commands:
-
-```bash
-pip install -r requirements.txt
-uvicorn main:app --reload
-```
-
-The FastAPI backend will be accessible at `http://localhost:8000`.
-
-Open your web browser and go to `http://localhost:3000` to experience the task management application.
